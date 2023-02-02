@@ -1,0 +1,13 @@
+*               text=auto
+
+# These files are text and should be normalized (Convert crlf => lf)
+*.gitattributes text
+.gitignore      text
+*.md            text diff=markdown
+
+.gitattributes  export-ignore
+.gitignore      export-ignore
+
+*.gitattributes linguist-language=gitattributes
+
+*.go -text diff=golang

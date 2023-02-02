@@ -1,0 +1,54 @@
+{
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "go.formatTool": "goformat",
+    "python.formatting.provider": "yapf",
+    "psi-header.config": {
+        "forceToTop": true,
+        "blankLinesAfter": 1,
+    },
+    "psi-header.changes-tracking": {
+        "autoHeader": "autoSave",
+        "exclude": [
+            "json",
+            "markdown",
+            "text",
+            "makefile"
+        ]
+    },
+    "psi-header.variables": [
+        [
+            "author",
+            "Dizzrt"
+        ]
+    ],
+    "psi-header.lang-config": [
+        {
+            "language": "*",
+            "begin": "// ",
+            "end": "// ",
+            "prefix": "// "
+        },
+        {
+            "language": "python",
+            "begin": "#!/usr/bin/env python3",
+            "end": "# ",
+            "prefix": "# "
+        }
+    ],
+    "psi-header.templates": [
+        {
+            "language": "*",
+            "template": [
+                "File: <<filename>>",
+                "Created by <<author>> on <<filecreated('YYYY/MM/DD')>>.",
+                "",
+                "Copyright (C) <<year>> The oset Authors.",
+                "This source code is licensed under the MIT license found in",
+                "the LICENSE file in the root directory of this source tree."
+            ]
+        }
+    ],
+}
