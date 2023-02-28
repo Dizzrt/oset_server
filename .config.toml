@@ -1,0 +1,23 @@
+[server.log]
+enable = true
+kafka_host = '127.0.0.1:9092'
+es_host = 'http://127.0.0.1:9200'
+
+[server.event]
+enable = false
+kafka_host = '127.0.0.1:9092'
+es_host = '127.0.0.1:9200'
+
+[log]
+reporter_type = 'server'
+reporter_name = 'debug_server'
+file_path = 'oset.log'
+max_file_size = 10
+max_backups = 5
+max_age = 30
+is_compress = true
+
+[log.kafka]
+is_enable = false
+host = '127.0.0.1:9092'
+topic = 'log'
